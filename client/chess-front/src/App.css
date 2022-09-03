@@ -1,0 +1,24 @@
+.title {
+    text-align: center;
+    margin: 7.5% auto 0px;
+    font-size: 100px;
+}
+
+.byCreator {
+    margin: 0 auto 5%;
+    text-align: center;
+}
+
+body {
+    background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto ;
+    padding: 0px;
+}
+
