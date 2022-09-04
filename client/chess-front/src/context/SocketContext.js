@@ -1,8 +1,8 @@
-import { createContext, useState } from "react"
+import { createContext} from "react"
 import io from "socket.io-client";
 
 const IS_PROD = process.env.NODE_ENV === "production";
-const URL = IS_PROD ? "https://daniel-chess-game.herokuapp.com/" : "http://localhost:3001";
+const URL = IS_PROD ? "https://chess-daniel-kim.herokuapp.com/" : "http://localhost:3001";
 
 const socket = io.connect(URL);
 

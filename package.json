@@ -4,10 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-
+    "start": "cd server && node index.js",
+    "client": "cd client/chess-front && npm start",
+    "server": "cd server && node index.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "heroku-postbuild": "npm install --prefix ./client/chess-front && npm install --prefix ./server"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
 }

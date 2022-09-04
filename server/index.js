@@ -8,7 +8,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: ["https://daniel-chess-game.herokuapp.com/","http://localhost:3000"],
+        origin: ["https://chess-daniel-kim.herokuapp.com/", "http://localhost:3000"],
         methods: ["GET", "POST"]
     }
 })

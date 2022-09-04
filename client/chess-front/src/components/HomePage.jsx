@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import io from "socket.io-client";
 import { useState } from "react"
 import SocketContext from "../context/SocketContext";
 import { useContext } from "react"

@@ -1,7 +1,6 @@
 import { Chessboard } from "react-chessboard";
 import { Chess } from "chess.js";
-import { useEffect, useState, useContext, useRef } from "react";
-import io from "socket.io-client";
+import { useEffect, useState, useContext} from "react";
 import SocketContext from "../context/SocketContext";
 
 export default function MyChessboard() {
@@ -66,7 +65,7 @@ export default function MyChessboard() {
           socket.off("receive_room_data");
           window.removeEventListener("resize", handleResize)
         }
-    }, [side]);
+    });
 
     //useEffect(() =>{ const gameCopy = { ...game }; gameCopy.load(game.fen()); setGame(gameCopy);}, [game])
 

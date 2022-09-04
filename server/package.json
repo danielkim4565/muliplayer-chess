@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,14 @@
     "bufferutil": "^4.0.6",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "multiplayer-chess": "file:..",
     "nodemon": "^2.0.19",
     "socket.io": "^4.5.1",
     "utf-8-validate": "^5.0.9",
     "ws": "^8.8.1"
+  },
+  "engines": {
+    "node": ">=16.15.1",
+    "npm": ">= 8.15.0"
   }
 }
